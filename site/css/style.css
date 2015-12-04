@@ -1,0 +1,242 @@
+* {
+	box-sizing: border-box;
+	max-width: 100%;
+}
+body, html {
+	background-color: #f4f4f4;
+	color: #3c4751;
+	font-family: 'Arial', sans-serif;
+	font-size: 14px;
+}
+.logo, .menu {
+	color: #fff;
+	font-family: 'Raleway', sans-serif;
+}
+.logo {
+	float: left;
+	text-align: center;
+	height: 60px;
+	background-color: #4ecdc4;
+}
+.logo .title {
+	background-color: #41a7a0;
+	font-weight: 300;
+	font-size: 20px;
+	padding: 7px;
+}
+.logo .subtitle {
+	font-weight: 800;
+	letter-spacing: 6px;
+    font-size: 16px;
+    padding: 2px;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+.menu .flaticon-menu48 {
+	float: right;
+	margin:15px;
+}
+.menu .flaticon-four89 {
+	float: right;
+	margin: 7px;
+}
+.menu .master {
+	height: 60px;
+	background-color: #3c4751;
+	font-size: 16px;
+}
+.menu a {
+	display: none;
+}
+.menu a.visible {
+	display: inline-block;
+}
+.menu .master li {
+	padding: 21px;
+	display: inline-block;
+	cursor: pointer;
+}
+.menu .slave {
+	height: 38px;	
+	background-color: #556270;
+}
+.menu .slave li {
+	cursor: pointer;
+	display: inline-block;
+	padding: 12px;
+	padding-bottom: 6px;
+	font-size: 12px;
+}
+.list a {
+	border:none;
+	text-decoration: none;
+}
+.list .kit img{
+	border: 1px solid #dedede;
+	-webkit-box-shadow: 4px 3px 5px 0px rgba(0, 0, 0, 0.23);
+	-moz-box-shadow:    4px 3px 5px 0px rgba(0, 0, 0, 0.23);
+	box-shadow:         4px 3px 5px 0px rgba(0, 0, 0, 0.23);
+}
+.list {
+	text-align: center;
+}
+.list .kit {
+	text-align: center;
+	margin-top: 30px;
+	max-width: 310px;
+	display: inline-block;
+	cursor: pointer;
+}
+.list .kit .title {
+	font-weight: 800;
+	font-family: 'Raleway', sans-serif;
+	float: left;
+	padding-top: 5px;
+	padding-left: 5px;
+	color: #3c4751;
+}
+.menu .slave.info-comp li{
+	margin: 0;
+	padding: 0;
+	padding-top: 8px;
+}
+.list .kit .infos {
+	float: right;
+	margin-right: 4px;
+}
+.list .kit .info {
+	margin-top: 5px;
+	float: left;
+}
+.list .kit .info i {
+	margin-right: 3px;
+}
+.list .kit .info.down {
+	color: #88ad37;
+}
+.list .kit .info.comment {
+	color: #556270;
+}
+.list .kit .info.like {
+	color: #c44d58;
+}
+.list .kit .info :before {
+	font-size: 16px;
+}
+.master .active {
+	background-image: url(../img/totop.png);
+	background-position: center bottom;
+	background-repeat: no-repeat;
+}
+.slave .active {
+	border-bottom: 6px solid #4ecdc4;
+}
+.kit .new {
+	position: absolute;
+	width: 100px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+}
+.kit .new .mark {
+	background-color: #c7f464;
+	border:1px solid #7d993f;
+	color: #445322;
+	padding: 4px;
+	z-index: 2;
+	position: absolute;
+	margin: -6px;
+}
+.kit .new .corner{
+	position: absolute;
+    display: block;
+    border-color: transparent;
+    border-style: solid;
+    top: 18px;
+    border-right-color: #7d993f;
+    content: " ";
+    border-width: 9px;
+    z-index: 1;
+    margin-top: -10px;
+    margin-left: -15px;
+}
+.menuMobile {
+	background: #fff;
+	border: 1px solid #ccc;
+    position: absolute;
+    right: 15px;
+    margin-top: 40px;
+    border-radius: 6px;
+    color: #3c4751;
+    padding: 12px;
+}
+.menuMobile li {
+	margin: 10px;
+	display: block !important;
+	text-align: right;
+	padding: 0 !important;
+}
+.info-comp-text {
+	display: none;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.info-comp ul {
+	float: left;
+	margin-right: 50px;
+}
+
+@media screen and (min-width: 470px) {
+	.menu a.more1 {
+		display: inline-block;
+	}
+}
+@media screen and (min-width: 580px) {
+	.menu a.more2 {
+		display: inline-block;
+	}
+	.slave i {
+		display: none;
+	}
+	.slave.info-comp i {
+		display: inline-block;
+	}
+	.info-comp-text {
+		display: inline-block;
+	}
+	.menu a {
+		display: inline-block;
+	}
+	.menu i {
+		display: none;
+	}
+}
+@media screen and (min-width: 800px) {
+
+	.logo .title {
+		height: 60px;
+		font-size: 30px;
+		padding: 10px;
+	}
+	.logo .subtitle {
+	    font-size: 18px;
+	    padding: 8px;
+	    height: 38px;
+	}
+	.menu .slave li:first-child {
+		margin-left: 20px;
+	}
+	.menu .slave li {
+		padding: 12px;
+		padding-bottom: 6px;
+	}
+	.logo {
+		height: auto;
+	}
+}
+@media screen and (min-width: 1000px) {
+	.list .kit {
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+}
