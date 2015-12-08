@@ -1,0 +1,11 @@
+{
+  "name": "showuikit",
+  "version": "1.0.0",
+  "description": "showuikit",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "mysql": "^2.9.0"
+  }
+}
